@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/003.jpg");
+    height: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+#top,#middle,#bottom{
+    height: 800px;  
+}
+
+/*header area*/
+
+header {
+    padding: 10px;
+    padding-top: 18px;
+    margin-bottom: 22px;
+    text-align: center; 
+}
+
+#title {
+    margin-right: 30px;
+    margin-left: 700px;
+    padding: 10px;
+    color: rgb(198, 168, 204);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    font-family: 'Advent Pro', sans-serif, 微软雅黑, STXihei, 华文细黑;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgb(198, 168, 204);
+}
+
+#title-2 {
+    text-align: right;
+    font-family: 'Reenie Beanie', cursive;
+    letter-spacing: 1px;
+    font-size: 33px;
+    color:rgb(213, 241, 241);
+     margin-right: 30px;
+}
+
+
+/*intro area*/
+.col-lg-6 {
+    margin-top: 100px;
+}
+#poem-area {
+    text-align: right;
+}
+#poem-one {
+    color:rgb(213, 241, 241);
+    letter-spacing: 0.8px;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: 3.2px;
+    line-height: 36px;
+}
+#text-one {
+    font-family: 'Abel', sans-serif;
+    color:rgb(5, 192, 199);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 22px;
+    text-align: right;
+}
+#text-two {
+    font-family: 'Abel', sans-serif;
+    color:rgb(5, 192, 199);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 28px;
+    text-align: right;
+}
+
+/*search area*/
+#search-area {
+    padding: 30px;
+    color:  #fff;
+    background-color: rgba(223, 231, 229, 0.5);
+    width: 40%;
+    height: auto;
+    margin-top: -110px;
+    margin-left: 600px; 
+}
+#search {
+    color:rgb(11, 92, 95);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 22px;
+}
+#inputsm{
+    width : 250px;
+    height: 40px;  
+    border-bottom: 1px solid rgb(247, 243, 243);
+    padding-left: 5px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: rgb(2, 38, 41);
+}
+#search-btn {
+    width : 60px;
+    height: 35px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 8px;
+    color: #666;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#search-btn:hover,#search-btn:active {
+    color: rgb(236, 236, 236);
+    background-color: #666;
+}
+
+
+/*cards data*/
+
+.recipe-suggestions {
+    font-family: 'Abel', sans-serif;
+    color:rgb(5, 192, 199);
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-size: 45px;
+    margin-top: 100px;
+}
+
+#recipe-header {
+    font-size: 28px;
+    font-family: 'Reenie Beanie', cursive;
+    letter-spacing: 1.2px;
+    color:rgb(213, 241, 241);
+}
+
+.card-title {
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.card-publisher {
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.card-rating{
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.card-link {
+    font-family: 'Abel', sans-serif;
+    letter-spacing: 1px;
+    color:rgb(11, 92, 95);
+    font-weight: bold;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: rgba(223, 231, 229, 0.5);
+    padding: 20px;
+}
+
+.scroll-box {  
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    height: auto;
+} 
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 10px;
+    
+  }
+
+.content-holder {
+    /* width:100%; */
+    overflow: auto;
+    margin-top: 10px;
+    
+    
+} 
+
+/*bottom*/
+
+#bottom {
+    min-height:100%;
+    position:relative;
+}
+
+#final-area {
+    background: rgb(198, 168, 204);
+    color: #ccc;
+    padding-bottom: 5px;
+    width: 100%;
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    display: block;
+    bottom: 0;
+}
+
+.quotes {
+    float: left;
+}
+
+#title-3 {
+    text-align: right;
+    font-family: 'Reenie Beanie', cursive;
+    letter-spacing: 1.2px;
+    font-size: 35px;
+    color:rgb(213, 241, 241);
+    margin-right: 30px;
+    line-height: 40px;
+    margin-top: 400px;
+    font-weight: bold;
+}
+
+.credit {
+    text-align: center; 
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 15px;
+}
+
+.credit-text {
+    font-family: 'Advent Pro', sans-serif, 微软雅黑, STXihei, 华文细黑;
+    letter-spacing: 1px;
+} 
